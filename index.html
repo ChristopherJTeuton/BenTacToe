@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mode-selection">
+        <h1>Select Game Mode</h1>
+        <button id="soloModeButton">Solo Mode</button>
+        <button id="twoPlayerModeButton">2-Player Mode</button>
+    </div>
+    <div class="game-container" style="display: none;">
+        <h1>Ben-Tac-Toe</h1>
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="status">Player 1's Turn</div>
+        <div class="scoreboard">
+            <div>Player 1 Wins: <span id="player1Wins">0</span></div>
+            <div>Player 2 Wins: <span id="player2Wins">0</span></div>
+        </div>
+        <button id="resetButton">Reset Game</button>
+        <button id="returnToMenuButton">Return to Menu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
